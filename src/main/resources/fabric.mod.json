@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fancy_a_cuppa",
+	"version": "${version}",
+	"name": "Fancy a Cuppa",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"InfinityFarzad"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/fancy_a_cuppa/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.farzad.fancy_a_cuppa.FancyACuppa"
+		],
+		"fabric-datagen": [
+			"dev.farzad.fancy_a_cuppa.FancyACuppaDataGenerator"
+		],
+		"client": [
+			"dev.farzad.fancy_a_cuppa.client.FancyACuppaClient"
+		]
+	},
+	"mixins": [
+		"fancy_a_cuppa.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

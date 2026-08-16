@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "fixed",
+          "on_shelf",
+          "ground"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "fancy_a_cuppa:item/mug_inv"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:special",
+      "model": {
+        "type": "fancy_a_cuppa:mug"
+      },
+      "base": "fancy_a_cuppa:item/mug"
+    }
+  }
+}
