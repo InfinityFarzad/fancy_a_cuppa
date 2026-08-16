@@ -18,10 +18,34 @@
     ],
     "fallback": {
       "type": "minecraft:special",
+      "base": "fancy_a_cuppa:item/mug",
       "model": {
         "type": "fancy_a_cuppa:mug"
       },
-      "base": "fancy_a_cuppa:item/mug"
+      "transformation": {
+        "left_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "right_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
     }
   }
 }

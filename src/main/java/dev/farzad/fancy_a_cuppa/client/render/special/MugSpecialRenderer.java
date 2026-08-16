@@ -61,7 +61,7 @@ public class MugSpecialRenderer implements SpecialModelRenderer<DataComponentMap
         }
 
         public MugSpecialRenderer bake(SpecialModelRenderer.BakingContext context) {
-            return new MugSpecialRenderer(new MugModel(context.entityModelSet().bakeLayer(FACLayerDefinitions.MUG), null));
+            return new MugSpecialRenderer(new MugModel(context.entityModelSet().bakeLayer(FACLayerDefinitions.MUG)));
         }
     }
 }
