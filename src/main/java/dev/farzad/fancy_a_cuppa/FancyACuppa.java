@@ -1,5 +1,6 @@
 package dev.farzad.fancy_a_cuppa;
 
+import dev.farzad.fancy_a_cuppa.init.FACDataComponents;
 import dev.farzad.fancy_a_cuppa.init.FACItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,6 +18,7 @@ public class FancyACuppa implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Fancy a cuppa?");
 		FACItems.init();
+		FACDataComponents.init();
 	}
 
 	public static Identifier id(String path) {

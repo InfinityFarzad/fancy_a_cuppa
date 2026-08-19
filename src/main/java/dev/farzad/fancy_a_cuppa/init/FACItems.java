@@ -3,16 +3,18 @@ package dev.farzad.fancy_a_cuppa.init;
 import dev.farzad.fancy_a_cuppa.FancyACuppa;
 import dev.farzad.fancy_a_cuppa.item.MugItem;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.UseEffects;
 
 import java.util.function.Function;
 
 public interface FACItems {
 
-    Item MUG = register("mug", MugItem::new ,new Item.Properties());
+    Item MUG = register("mug", MugItem::new ,new Item.Properties().component(DataComponents.USE_EFFECTS,new UseEffects(true, false, 0.05f)).useCooldown(0.5f).stacksTo(16));
 
     static Item register(String id, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, FancyACuppa.id(id));

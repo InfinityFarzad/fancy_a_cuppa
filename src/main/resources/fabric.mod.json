@@ -3,13 +3,14 @@
 	"id": "fancy_a_cuppa",
 	"version": "${version}",
 	"name": "Fancy a Cuppa",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "a mod about cups and drinking",
 	"authors": [
-		"InfinityFarzad"
+		"InfinityFarzad",
+		"Powercyphe"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/fancy-a-cuppa",
+		"sources": "https://github.com/InfinityFarzad/fancy_a_cuppa"
 	},
 	"license": "ARR",
 	"icon": "assets/fancy_a_cuppa/icon.png",
@@ -29,7 +30,7 @@
 		"fancy_a_cuppa.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
+		"fabricloader": ">=0.19.2",
 		"minecraft": "~26.1",
 		"java": ">=25",
 		"fabric-api": "*"
