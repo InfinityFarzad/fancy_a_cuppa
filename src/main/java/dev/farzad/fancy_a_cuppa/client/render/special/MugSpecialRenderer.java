@@ -35,7 +35,7 @@ public class MugSpecialRenderer implements SpecialModelRenderer<DataComponentMap
     public void submit(@Nullable DataComponentMap argument, PoseStack poseStack, SubmitNodeCollector submitNodeCollector, int lightCoords, int overlayCoords, boolean hasFoil, int outlineColor) {
         poseStack.pushPose();
         submitNodeCollector.submitModelPart(this.model.root(), poseStack, this.model.renderType(MugModel.TEXTURE), lightCoords, overlayCoords, null, false, hasFoil, -1, null, outlineColor);
-        //submitNodeCollector.submitModelPart(this.model.getFluid(), poseStack, this.model.renderType());
+        //submitNodeCollector.submitModelPart(this.model.root(), poseStack, this.model.renderType(), lightCoords, overlayCoords, null, false, hasFoil, -1, null, outlineColor);
         poseStack.popPose();
     }
 

@@ -1,7 +1,7 @@
-package dev.farzad.fancy_a_cuppa.init;
+package dev.farzad.fancy_a_cuppa.common.init;
 
 import dev.farzad.fancy_a_cuppa.FancyACuppa;
-import dev.farzad.fancy_a_cuppa.item.MugItem;
+import dev.farzad.fancy_a_cuppa.common.item.MugItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
